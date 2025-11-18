@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="../CSS/styles.css?v=1.0">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Wheels on Fire</h1>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <nav class="site-nav" aria-label="Primary">
+                <ul id="primary-navigation">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="order-hero">
+            <div class="container">
+                <p class="order-hero__eyebrow">Reserve your dream car</p>
+                <h2>Custom builds delivered to your door</h2>
+                <p class="order-hero__copy">
+                    Tell us the brand, trim and bespoke touches you are after. Our concierge team will source verified vehicles,
+                    arrange inspections and walk you through delivery timelines within 24 hours.
+                </p>
+                <div class="order-hero__actions">
+                    <a class="btn" href="brands.html">Browse all brands</a>
+                    <span class="order-hero__disclaimer">No payment due until confirmation</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-section">
+            <div class="container order-layout">
+                <div class="order-card order-info">
+                    <h3>How ordering works</h3>
+                    <p>We pair every request with a dedicated specialist who validates availability, negotiates pricing and
+                        schedules logistics anywhere in Ireland.</p>
+                    <ol class="order-steps">
+                        <li>
+                            <span class="order-step-number">1</span>
+                            <div>
+                                <strong>Share your specification</strong>
+                                <p>Tell us the brand, trim, color palette and any collector options you cannot live without.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="order-step-number">2</span>
+                            <div>
+                                <strong>Receive curated matches</strong>
+                                <p>Within one business day we send a curated shortlist with pricing, provenance and media.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="order-step-number">3</span>
+                            <div>
+                                <strong>Finalize delivery</strong>
+                                <p>Approve your choice and we coordinate transport, registration and optional detailing.</p>
+                            </div>
+                        </li>
+                    </ol>
+
+                    <div class="order-perks">
+                        <h4>Included with every order</h4>
+                        <ul>
+                            <li>Verified history reports and dealer paperwork</li>
+                            <li>Secure enclosed transport anywhere nationwide</li>
+                            <li>White-glove delivery with a handover specialist</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="order-card order-form-card">
+                    <h3>Start your build request</h3>
+                    <form class="order-form" action="#" method="post">
+                        <div class="order-form-grid">
+                            <div class="form-field">
+                                <label for="order-name">Full Name</label>
+                                <input type="text" id="order-name" name="name" placeholder="Jordan Smith" autocomplete="name" required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="order-email">Email</label>
+                                <input type="email" id="order-email" name="email" placeholder="you@email.com" autocomplete="email" required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="order-phone">Phone</label>
+                                <input type="tel" id="order-phone" name="phone" placeholder="+353 87 123 4567" autocomplete="tel">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="order-brand">Preferred Brand</label>
+                                <select id="order-brand" name="brand" required>
+                                    <option value="">Select brand</option>
+                                    <option value="Ferrari">Ferrari</option>
+                                    <option value="Lamborghini">Lamborghini</option>
+                                    <option value="Porsche">Porsche</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Nissan">Nissan</option>
+                                    <option value="McLaren">McLaren</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="order-model">Model or trim</label>
+                                <input type="text" id="order-model" name="model" placeholder="812 GTS, DB5, etc." required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="order-colour">Preferred colour</label>
+                                <select id="order-colour" name="colour">
+                                    <option value="">Select colour</option>
+                                    <option value="Rosso Corsa">Rosso Corsa</option>
+                                    <option value="Silver">Silver Arrow</option>
+                                    <option value="Nero">Nero</option>
+                                    <option value="British Racing Green">British Racing Green</option>
+                                    <option value="Arctic White">Arctic White</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="order-budget">Budget (EUR)</label>
+                                <input type="number" id="order-budget" name="budget" min="50000" step="5000" placeholder="150000">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="order-date">Target delivery date</label>
+                                <input type="date" id="order-date" name="delivery-date">
+                            </div>
+
+                            <div class="form-field full-width">
+                                <label for="order-preferences">Special requests</label>
+                                <textarea id="order-preferences" name="preferences" rows="4" placeholder="Tell us about upholstery, provenance requirements or delivery notes."></textarea>
+                            </div>
+                        </div>
+
+                        <label class="order-terms">
+                            <input type="checkbox" name="consent" required>
+                            I agree to be contacted by the Wheels on Fire concierge team regarding this enquiry.
+                        </label>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">Submit order request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Wheels on Fire. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../JS/site.js?v=1.0" defer></script>
+</body>
+</html>
