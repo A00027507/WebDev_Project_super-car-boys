@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Wheels on Fire</h1>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <nav class="site-nav" aria-label="Primary">
+                <ul id="primary-navigation">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Driven by passion. Reach out about models, test drives, or services.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-layout">
+                <div class="contact-sidebar">
+                    <div class="contact-card contact-info-card">
+                        <h3>Contact Details</h3>
+                        <div class="contact-details-grid">
+                            <div class="contact-detail">
+                                <span class="contact-detail__label">Email</span>
+                                <a href="mailto:info@example.com">info@gmail.com</a>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-detail__label">Phone</span>
+                                <a href="tel:+11234567890">(123) 456-7890</a>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-detail__label">Showroom</span>
+                                <address>123 Dublin</address>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="contact-detail__label">Hours</span>
+                                <p>Mon–Fri: 9:00–17:30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-card map-card">
+                        <h3>Visit Our Showroom</h3>
+                        <p class="map-subtitle">Find us in the heart of Dublin.</p>
+                        <div class="map-embed" aria-label="Location map" role="img">
+                            <div class="map-embed__placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-card contact-form-card">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form" action="#" method="post" novalidate>
+                        <div class="form-field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required aria-describedby="name-error">
+                            <p id="name-error" class="field-error" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required aria-describedby="email-error">
+                            <p id="email-error" class="field-error" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required aria-describedby="message-error"></textarea>
+                            <p id="message-error" class="field-error" aria-live="polite"></p>
+                        </div>
+
+                        <div class="hp-field" aria-hidden="true">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">Submit</button>
+                        </div>
+
+                        <div class="form-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Wheels on Fire. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/site.js"></script>
+</body>
+</html>
