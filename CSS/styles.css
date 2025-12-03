@@ -547,19 +547,6 @@ body {
     background: #fff;
 }
 
-.field-error {
-    margin: 0.25rem 0 0;
-    color: #b91c1c;
-    font-size: 0.9rem;
-    min-height: 1.25em;
-}
-
-.form-field.has-error input,
-.form-field.has-error textarea {
-    border-color: #ef4444;
-    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
-}
-
 .form-status {
     margin-top: 0.5rem;
     font-size: 0.95rem;
